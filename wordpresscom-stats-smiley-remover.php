@@ -12,7 +12,7 @@ Version: 4.2014.06
 /**
  * WordPress.com Stats Smiley Remover core file
  *
- * This file contains all the logic required for the plugin
+ * This file contains all the logic required for the plugin, for more information please see the readme file
  *
  * @link		http://wordpress.org/extend/plugins/wordpresscom-stats-smiley-remover/
  *
@@ -21,31 +21,26 @@ Version: 4.2014.06
  * @license		http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License, v2 (or newer)
  *
  * @since 		WordPress.com Stats Smiley Remover 1.0
+ *
+ *
  */
 
 
 
 /**
- * thisismyurl_wpsmileyremover_header_code_function()
+ * Removes the smiley face from the front end of WordPress
+ *
+ * @package WordPress.com Stats Smiley Remover
+ * 
  *
  */
 function thisismyurl_wpsmileyremover_header_code_function() {
-	?>
-		<!-- WordPress.com Stats Smiley Remover (start) -->
-		<style type="text/css">
-		img#wpstats {
-			position: absolute !important;
-			width: 0px !important;
-			height: 0px !important;
-			overflow: hidden !important;
-			display: none !important;
-			visibility: hidden !important;
-			position: absolute !important;
-			clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-			clip: rect(1px, 1px, 1px, 1px);
-		}
-		</style>
-		<!-- WordPress.com Stats Smiley Remover (end) -->
-	<?php
+	
+	wp_register_script( 'wordpresscom-stats-smiley-remover', 
+						plugins_url( 'css/wordpresscom-stats-smiley-remover.css', __FILE__ ) 
+	);
+	
+	wp_enqueue_script( 'wordpresscom-stats-smiley-remover' );
+	
 }
-add_action( 'wp_head','thisismyurl_wpsmileyremover_header_code_function' );
+add_action( 'wp_enqueue_scripts','thisismyurl_wpsmileyremover_header_code_function' );

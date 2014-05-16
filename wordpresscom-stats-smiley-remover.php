@@ -25,22 +25,40 @@ Version: 4.2014.06
  *
  */
 
+class WPStatsSmileyRemover {
+	
+	
+	public function __construct() {
+		
+		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles' ) );
+		
+    }
+	
+	
+	/**
+	 * Removes the smiley face from the front end of WordPress
+	 *
+	 * @package WordPress.com Stats Smiley Remover
+	 * @author  Christopher Ross <info@thisismyurl.com>
+	 *
+	 * @since 1.0
+	 * @param NULL
+	 * @return NULL
+	 *
+	 *
+	 */
+	function enqueue_styles() {
+		
+		wp_register_script( 'wordpresscom-stats-smiley-remover', 
+							plugins_url( 'css/wordpresscom-stats-smiley-remover.css', __FILE__ ) 
+		);
+		
+		wp_enqueue_script( 'wordpresscom-stats-smiley-remover' );
+		
+	} /* thisismyurl_wpsmileyremover_header_code_function() */
 
 
-/**
- * Removes the smiley face from the front end of WordPress
- *
- * @package WordPress.com Stats Smiley Remover
- * 
- *
- */
-function thisismyurl_wpsmileyremover_header_code_function() {
-	
-	wp_register_script( 'wordpresscom-stats-smiley-remover', 
-						plugins_url( 'css/wordpresscom-stats-smiley-remover.css', __FILE__ ) 
-	);
-	
-	wp_enqueue_script( 'wordpresscom-stats-smiley-remover' );
-	
-}
-add_action( 'wp_enqueue_scripts','thisismyurl_wpsmileyremover_header_code_function' );
+} /* WPStatsSmileyRemover */
+
+
+$WPStatsSmileyRemover = new WPStatsSmileyRemover();

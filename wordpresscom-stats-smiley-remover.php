@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: WordPress.com Stats Smiley Remover
-Plugin URI: http://thisismyurl.com/plugins/wordpress-com-stats-smiley-remover/
+Plugin URI: http://thisismyurl.com/downloads/wordpresscom-stats-smiley-remover/
 Description: The WordPress.com Stats Smiley Remover quickly removes the smiley face placed in the footer of your site by the WordPress.com Stats plugin.
 Author: Christopher Ross
 Author URI: http://thisismyurl.com/
-Version: 4.1.1
+Version: 4.2014.06
 */
 
 
@@ -16,8 +16,8 @@ Version: 4.1.1
  *
  * @link		http://wordpress.org/extend/plugins/wordpresscom-stats-smiley-remover/
  *
- * @package 		WordPress.com Stats Smiley Remover
- * @copyright		Copyright (c) 2008, Chrsitopher Ross
+ * @package 	WordPress.com Stats Smiley Remover
+ * @copyright	Copyright (c) 2008, Chrsitopher Ross
  * @license		http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License, v2 (or newer)
  *
  * @since 		WordPress.com Stats Smiley Remover 1.0

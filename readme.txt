@@ -1,11 +1,11 @@
 === Plugin Name ===
 Contributors: christopherross
-Plugin URI: http://thisismyurl.com/plugins/wordpress-com-stats-smiley-remover/
-Donate link:  http://thisismyurl.com/plugins/
+Plugin URI: http://thisismyurl.com/downloads/wordpresscom-stats-smiley-remover/
+Donate link:  http://thisismyurl.com/downloads/
 Tags: wordpress.com stats, smiley, image, removal, stats, smiley face, remove
 Requires at least: 2.0.0
-Tested up to: 3.5.1
-Stable tag: 4.1.1
+Tested up to: 3.9.1
+Stable tag: 4.2014.06
 
 Removes the smiley face created by WordPress.com Stats and JetPack plugins for WordPress by adding a single line of CSS to your header.
 
@@ -24,19 +24,27 @@ This plugin is maintained by Christopher Ross, http://thisismyurl.com or you can
 
 == Updates ==
 
-Updates to the plugin will be posted here, to [Christopher Ross](http://thisismyurl.com/plugins/wordpress-com-stats-smiley-remover/). [WordPress.com Stats Smiley Remover](http://thisismyurl.com/plugins/wordpress-com-stats-smiley-remover/) was developed and is maintained by [Christopher Ross](http://thisismyurl.com).
+Updates to the plugin will be posted here, to http://thisismyurl.com/downloads/wordpresscom-stats-smiley-remover/. http://thisismyurl.com/downloads/wordpresscom-stats-smiley-remover/ was developed and is maintained by Christopher Ross.
 
 == Frequently Asked Questions ==
 
 = Questions =
 
-There have been no questions, please feel free to ask questions in the [wordpress.org](http://wordpress.org/tags/wordpresscom-stats-smiley-remover) forums.
+There have been no questions, please feel free to ask questions in the forums.
+
+- http://wordpress.org/support/plugin/wordpresscom-stats-smiley-remover
+- https://github.com/thisismyurl/wordpresscom-stats-smiley-remover/issues
 
 == Donations ==
 
-If you would like to donate to help support future development of this tool, please make a donation via [Christopher Ross](http://thisismyurl.com/plugins/wordpress-com-stats-smiley-remover/)
+If you would like to donate to help support future development of this tool, please make a donation via my website.
 
 == Change Log ==
+
+= 4.2014.06 =
+
+* updates to the readme file;
+* 
 
 = 4.1.0 =
 

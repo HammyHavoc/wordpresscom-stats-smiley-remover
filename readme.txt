@@ -44,7 +44,7 @@ If you would like to donate to help support future development of this tool, ple
 = 4.2014.06 =
 
 * updates to the readme file;
-* 
+* converted plugin to object orientate code
 
 = 4.1.0 =
 
@@ -64,7 +64,6 @@ If you would like to donate to help support future development of this tool, ple
 = 3.1 =
 
 * wp admin changes
-
 
 = 3.0.3 =
 

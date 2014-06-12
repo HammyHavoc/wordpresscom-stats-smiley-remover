@@ -25,23 +25,39 @@ Version: 4.1.2014.06.06
  *
  */
 
+if ( is_admin() ) { 
+	include_once( plugin_dir_path( __FILE__ ) . 'common-settings.php' );
+	include_once( plugin_dir_path( __FILE__ ) . 'common/common.php' );
+}
+
 class WPStatsSmileyRemover {
 	
-	
-	public function __construct() {
-		
-		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles' ) );
-		
-    }
-	
-	
 	/**
-	 * Removes the smiley face from the front end of WordPress
+	 * Activates the required functions for the plugin.
 	 *
 	 * @package WordPress.com Stats Smiley Remover
 	 * @author  Christopher Ross <info@thisismyurl.com>
 	 *
-	 * @since 1.0
+	 * @since 4.1.2014.06.06
+	 * @param NULL
+	 * @return NULL
+	 *
+	 *
+	 */
+	 public function __construct() {
+		
+		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles' ) );
+		
+    } /* __construct() */
+	
+	
+	/**
+	 * Removes the smiley face from the front end of WordPress.
+	 *
+	 * @package WordPress.com Stats Smiley Remover
+	 * @author  Christopher Ross <info@thisismyurl.com>
+	 *
+	 * @since 4.1.2014.06.06
 	 * @param NULL
 	 * @return NULL
 	 *
@@ -50,7 +66,9 @@ class WPStatsSmileyRemover {
 	function enqueue_styles() {
 		
 		wp_register_script( 'wordpresscom-stats-smiley-remover', plugins_url( 'css/wordpresscom-stats-smiley-remover.css', __FILE__ ) );
-		wp_enqueue_script( 'wordpresscom-stats-smiley-remover' );
+		
+		if ( ! is_admin() )
+			wp_enqueue_script( 'wordpresscom-stats-smiley-remover' );
 		
 	} /* enqueue_styles() */
 

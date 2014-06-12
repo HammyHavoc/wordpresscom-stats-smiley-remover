@@ -1,0 +1,4 @@
+[submodule "common"]
+	path = common
+	url = https://github.com/thisismyurl/thisismyurl-common-plugin-file.git
+	branch = master

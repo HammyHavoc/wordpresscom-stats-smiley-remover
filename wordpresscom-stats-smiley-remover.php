@@ -28,7 +28,7 @@ Version: 4.1.2014.06.06
 if ( is_admin() ) { 
 	include_once( plugin_dir_path( __FILE__ ) . 'common-settings.php' );
 	include_once( plugin_dir_path( __FILE__ ) . 'common/common.php' );
-}
+} /* if ( is_admin() ) */
 
 class WPStatsSmileyRemover {
 	
@@ -65,10 +65,13 @@ class WPStatsSmileyRemover {
 	 */
 	function enqueue_styles() {
 		
-		wp_register_script( 'wordpresscom-stats-smiley-remover', plugins_url( 'css/wordpresscom-stats-smiley-remover.css', __FILE__ ) );
+				
+		if ( ! is_admin() ) {
+			
+			wp_register_style( 'wordpresscom-stats-smiley-remover', plugins_url( 'css/wordpresscom-stats-smiley-remover.css', __FILE__ ) );
+			wp_enqueue_style( 'wordpresscom-stats-smiley-remover' );
 		
-		if ( ! is_admin() )
-			wp_enqueue_script( 'wordpresscom-stats-smiley-remover' );
+		}
 		
 	} /* enqueue_styles() */
 

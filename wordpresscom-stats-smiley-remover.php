@@ -16,24 +16,24 @@ Version: 4.1.14.06.06
  *
  * @link		http://wordpress.org/extend/plugins/wordpresscom-stats-smiley-remover/
  *
- * @package 	WordPress.com Stats Smiley Remover
+ * @package	WordPress.com Stats Smiley Remover
  * @copyright	Copyright (c) 2008, Chrsitopher Ross
  * @license		http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License, v2 (or newer)
  *
- * @since 		WordPress.com Stats Smiley Remover 1.0
+ * @since		WordPress.com Stats Smiley Remover 1.0
  *
  *
  */
 
-if ( is_admin() ) { 
+if ( is_admin() ) {
 
 	include_once( plugin_dir_path( __FILE__ ) . 'common-settings.php' );
 	include_once( plugin_dir_path( __FILE__ ) . 'common/common.php' );
-	
+
 } /* if ( is_admin() ) */
 
 class WPStatsSmileyRemover {
-	
+
 	/**
 	 * Activates the required functions for the plugin.
 	 *
@@ -47,12 +47,12 @@ class WPStatsSmileyRemover {
 	 *
 	 */
 	 public function __construct() {
-		
+
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles' ) );
-		
-    } /* __construct() */
-	
-	
+
+	} /* __construct() */
+
+
 	/**
 	 * Removes the smiley face from the front end of WordPress.
 	 *
@@ -66,15 +66,15 @@ class WPStatsSmileyRemover {
 	 *
 	 */
 	function enqueue_styles() {
-		
-				
+
+
 		if ( ! is_admin() ) {
-			
+
 			wp_register_style( 'wordpresscom-stats-smiley-remover', plugins_url( 'css/wordpresscom-stats-smiley-remover.css', __FILE__ ) );
 			wp_enqueue_style( 'wordpresscom-stats-smiley-remover' );
-		
+
 		}
-		
+
 	} /* enqueue_styles() */
 
 

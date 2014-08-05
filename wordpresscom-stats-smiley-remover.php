@@ -71,11 +71,12 @@ class WPStatsSmileyRemover {
 		if ( ! is_admin() ) {
 
 			wp_register_style( 'wordpresscom-stats-smiley-remover', plugins_url( 'css/wordpresscom-stats-smiley-remover.css', __FILE__ ) );
-			wp_enqueue_style( 'wordpresscom-stats-smiley-remover' );
-
+			__( 'WordPress', 'wordpresscom-stats-smiley-remover' );
 		}
 
 	} /* enqueue_styles() */
+	
+	
 
 
 } /* WPStatsSmileyRemover */

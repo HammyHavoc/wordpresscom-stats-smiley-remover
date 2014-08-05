@@ -12,8 +12,8 @@ $plugin_slug = 'wordpresscom-stats-smiley-remover';
 
 /* General plugin details */
 $plugin_settings['slug'] = $plugin_slug;
-$plugin_settings['name'] = __( 'WordPress.com Stats Smiley Remover' );
-$plugin_settings['shortname'] = __( 'Smiley Remover' );
+$plugin_settings['name'] = __( 'WordPress.com Stats Smiley Remover', 'wordpresscom-stats-smiley-remover' );
+$plugin_settings['shortname'] = __( 'Smiley Remover', 'wordpresscom-stats-smiley-remover' );
 
 /* set WordPress.org paths for official downloads etc. */
 $plugin_settings['url'] ['wordpress_org'] ['page']			= esc_url( 'http://wordpress.org/plugins/' . $plugin_slug . '/' );

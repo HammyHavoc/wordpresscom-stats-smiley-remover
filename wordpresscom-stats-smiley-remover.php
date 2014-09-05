@@ -6,7 +6,7 @@ Description: The WordPress.com Stats Smiley Remover quickly removes the smiley f
 Author: Christopher Ross
 Author URI: http://thisismyurl.com/
 Version: 4.1.14.06.06
-*/
+ */
 
 
 /**
@@ -35,18 +35,18 @@ if ( is_admin() ) {
 class WPStatsSmileyRemover {
 
 	/**
-	 * Activates the required functions for the plugin.
-	 *
-	 * @package WordPress.com Stats Smiley Remover
-	 * @author  Christopher Ross <info@thisismyurl.com>
-	 *
-	 * @since 4.1.2014.06.06
-	 * @param NULL
-	 * @return NULL
-	 *
-	 *
-	 */
-	 public function __construct() {
+	* Activates the required functions for the plugin.
+	*
+	* @package WordPress.com Stats Smiley Remover
+	* @author  Christopher Ross <info@thisismyurl.com>
+	*
+	* @since 4.1.2014.06.06
+	* @param NULL
+	* @return NULL
+	*
+	*
+	*/
+	public function __construct() {
 
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles' ) );
 
@@ -54,17 +54,17 @@ class WPStatsSmileyRemover {
 
 
 	/**
-	 * Removes the smiley face from the front end of WordPress.
-	 *
-	 * @package WordPress.com Stats Smiley Remover
-	 * @author  Christopher Ross <info@thisismyurl.com>
-	 *
-	 * @since 4.1.2014.06.06
-	 * @param NULL
-	 * @return NULL
-	 *
-	 *
-	 */
+	* Removes the smiley face from the front end of WordPress.
+	*
+	* @package WordPress.com Stats Smiley Remover
+	* @author  Christopher Ross <info@thisismyurl.com>
+	*
+	* @since 4.1.2014.06.06
+	* @param NULL
+	* @return NULL
+	*
+	*
+	*/
 	function enqueue_styles() {
 
 

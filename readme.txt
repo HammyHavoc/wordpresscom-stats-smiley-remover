@@ -1,11 +1,11 @@
 === Plugin Name ===
-Contributors: christopherross
-Plugin URI: http://thisismyurl.com/plugins/wordpress-com-stats-smiley-remover/
-Donate link:  http://thisismyurl.com/plugins/
+Contributors: christopherross,thisismyurl
+Plugin URI: http://thisismyurl.com/downloads/wordpress-com-stats-smiley-remover/
+Donate link: http://thisismyurl.com/downloads/
 Tags: wordpress.com stats, smiley, image, removal, stats, smiley face, remove
-Requires at least: 2.0.0
-Tested up to: 3.5.1
-Stable tag: 4.1.1
+Requires at least: 3.0.0
+Tested up to: 4.0.0
+Stable tag: 14.11
 
 Removes the smiley face created by WordPress.com Stats and JetPack plugins for WordPress by adding a single line of CSS to your header.
 
@@ -24,7 +24,7 @@ This plugin is maintained by Christopher Ross, http://thisismyurl.com or you can
 
 == Updates ==
 
-Updates to the plugin will be posted here, to [Christopher Ross](http://thisismyurl.com/plugins/wordpress-com-stats-smiley-remover/). [WordPress.com Stats Smiley Remover](http://thisismyurl.com/plugins/wordpress-com-stats-smiley-remover/) was developed and is maintained by [Christopher Ross](http://thisismyurl.com).
+Updates to the plugin will be posted here, to [Christopher Ross](http://thisismyurl.com/downloads/wordpress-com-stats-smiley-remover/). [WordPress.com Stats Smiley Remover](http://thisismyurl.com/downloads/wordpress-com-stats-smiley-remover/) was developed and is maintained by [Christopher Ross](http://thisismyurl.com).
 
 == Frequently Asked Questions ==
 
@@ -34,7 +34,7 @@ There have been no questions, please feel free to ask questions in the [wordpres
 
 == Donations ==
 
-If you would like to donate to help support future development of this tool, please make a donation via [Christopher Ross](http://thisismyurl.com/plugins/wordpress-com-stats-smiley-remover/)
+If you would like to donate to help support future development of this tool, please make a donation via [Christopher Ross](http://thisismyurl.com/downloads/wordpress-com-stats-smiley-remover/)
 
 == Change Log ==
 

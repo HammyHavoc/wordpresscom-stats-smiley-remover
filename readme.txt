@@ -24,19 +24,25 @@ This plugin is maintained by Christopher Ross, http://thisismyurl.com/ or you ca
 
 == Updates ==
 
-Updates to the plugin will be posted here, to [Christopher Ross](http://thisismyurl.com/downloads/wordpress-com-stats-smiley-remover/). [WordPress.com Stats Smiley Remover](http://thisismyurl.com/downloads/wordpress-com-stats-smiley-remover/) was developed and is maintained by [Christopher Ross](http://thisismyurl.com).
+Updates to the plugin will be posted here, to http://thisismyurl.com/. This plugin was developed and is maintained by Christopher Ross.
 
 == Frequently Asked Questions ==
 
 = Questions =
 
-There have been no questions, please feel free to ask questions in the [wordpress.org](http://wordpress.org/tags/wordpresscom-stats-smiley-remover) forums.
+There have been no questions, please feel free to ask questions in the http://wordpress.org/ forums.
 
 == Donations ==
 
-If you would like to donate to help support future development of this tool, please make a donation via [Christopher Ross](http://thisismyurl.com/downloads/wordpress-com-stats-smiley-remover/)
+If you would like to donate to help support future development of this tool, please make a donation via http://thisismyurl.com/downloads/
 
 == Change Log ==
+
+= 14.11 = 
+
+* made code 4.0.1 ready
+* converted to OOP
+* used wp_enqueue_scripts() hook for compatibility
 
 = 4.1.0 =
 

@@ -27,14 +27,45 @@ Version: 14.11
  */
 
 
-
 /**
- * thisismyurl_wpsmileyremover()
+ * Places the external CSS file into the enqueue function for WordPress.
  *
+ * @author     Christopher Ross <info@thisismyurl.com>
+ * @version    Release: @14.11@
+ * @see        wp_enqueue_scripts()
+ * @since      Class available since Release 14.11
  */
-function thisismyurl_wpsmileyremover() {
+class thissimyurl_WPSmileyRemover {
 	
-	wp_enqueue_style( 'thisismyurl_wpsmileyremover', plugins_url( 'wordpresscom-stats-smiley-remover.css', __FILE__ ) );
-
+	 /**
+	  * Standard Constructor
+	  *
+      * @access public
+      * @static
+	  * @uses http://codex.wordpress.org/Function_Reference/add_action
+      * @since Method available since Release 14.11
+	  */
+    public function __construct() {
+ 
+        add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_style' ) );
+     
+    }
+ 
+ 
+ 	/**
+	  * Standard Constructor
+	  *
+      * @access public
+      * @static
+	  * @uses http://codex.wordpress.org/Function_Reference/wp_enqueue_style
+      * @since Method available since Release 14.11
+	  */
+    public function enqueue_style() {
+		
+        wp_enqueue_style( 'thisismyurl-wpsmileyremover', plugins_url( 'wordpresscom-stats-smiley-remover.css', __FILE__ ) );
+    
+	}
+ 
 }
-add_action( 'wp_enqueue_scripts','thisismyurl_wpsmileyremover' );
+
+new thissimyurl_WPSmileyRemover;

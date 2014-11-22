@@ -10,6 +10,7 @@ Version: 14.11
 
 
 /**
+ *
  * WordPress.com Stats Smiley Remover core file
  *
  * This file contains all the logic required for the plugin
@@ -21,29 +22,19 @@ Version: 14.11
  * @license		http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU General Public License, v2 (or newer)
  *
  * @since 		WordPress.com Stats Smiley Remover 1.0
+ *
+ *
  */
 
 
 
 /**
- * thisismyurl_wpsmileyremover_header_code_function()
+ * thisismyurl_wpsmileyremover()
  *
  */
-function thisismyurl_wpsmileyremover_header_code_function() {
-	?>
-	<style type="text/css">
-	img#wpstats {
-		position: absolute !important;
-		width: 0px !important;
-		height: 0px !important;
-		overflow: hidden !important;
-		display: none !important;
-		visibility: hidden !important;
-		position: absolute !important;
-		clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-		clip: rect(1px, 1px, 1px, 1px);
-	}
-	</style>
-	<?php
+function thisismyurl_wpsmileyremover() {
+	
+	wp_enqueue_style( 'thisismyurl_wpsmileyremover', plugins_url( 'wordpresscom-stats-smiley-remover.css', __FILE__ ) );
+
 }
-add_action( 'wp_head','thisismyurl_wpsmileyremover_header_code_function' );
+add_action( 'wp_enqueue_scripts','thisismyurl_wpsmileyremover' );

@@ -4,7 +4,7 @@ Plugin URI: http://thisismyurl.com/downloads/wordpress-com-stats-smiley-remover/
 Donate link: http://thisismyurl.com/downloads/
 Tags: wordpress.com stats, smiley, image, removal, stats, smiley face, remove
 Requires at least: 3.0.0
-Tested up to: 4.0.0
+Tested up to: 4.0.1
 Stable tag: 14.11
 
 Removes the smiley face created by WordPress.com Stats and JetPack plugins for WordPress by adding a single line of CSS to your header.
@@ -15,7 +15,7 @@ The WordPress.com Stats Smiley Remover quickly removes the smiley face that Word
 
 The #9786; (smiley face) character is created by WordPress.com Stats when activated which can through a number of designs off. The WordPress.com Stats Smiley Remover uses W3C compliant CSS code to remove the character from users screens.
 
-This plugin is maintained by Christopher Ross, http://thisismyurl.com or you can find him on Twitter at http://twitter.com/thisismyurl/
+This plugin is maintained by Christopher Ross, http://thisismyurl.com/ or you can find him on Twitter at http://twitter.com/thisismyurl/
 
 == Installation ==
 

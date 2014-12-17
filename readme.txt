@@ -13,7 +13,7 @@ Removes the smiley face created by WordPress.com Stats and JetPack plugins for W
 
 The WordPress.com Stats Smiley Remover quickly removes the smiley face that WordPress.com Stats (http://wordpress.org/extend/plugins/stats/) places in the footer of your web pages.
 
-The #9786; (smiley face) character is created by WordPress.com Stats when activated which can through a number of designs off. The WordPress.com Stats Smiley Remover uses W3C compliant CSS code to remove the character from users screens.
+The #9786; (smiley face) character is created by WordPress.com Stats when activated which can throw a number of designs off. The WordPress.com Stats Smiley Remover uses W3C compliant CSS code to remove the character from users screens.
 
 This plugin is maintained by Christopher Ross, http://thisismyurl.com/ or you can find him on Twitter at http://twitter.com/thisismyurl/
 
